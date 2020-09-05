@@ -6,6 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
+/**
+ * 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+ * 		<property name="basePackage" value="com.atguigu.atcrowdfunding.dao"></property>
+ * 	</bean>
+ */
 @EnableTransactionManagement
 @MapperScan("com.atguigu.dao")  //扫描DAO接口，创建代理对象。
 @SpringBootApplication
@@ -13,5 +18,6 @@ public class MyApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class,args);
         System.out.println("22222222222");
+        System.out.println("111111111");
     }
 }
